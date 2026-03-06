@@ -3,65 +3,356 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>My Portfolio</title>
+        <title>Sonya Zhang</title>
+        <link rel="stylesheet" href="https://use.typekit.net/vct7vmg.css" />
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <nav class="nav">
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Web Design Projects</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#extracurricular">Extracurricular</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <header class="site-header">
+            <div class="name">Sonya Zhang</div>
+            <nav class="nav" id="navbar">
+                <ul>
+                    <li><span data-target="home">Home</span></li>
+                    <li><span data-target="about">About</span></li>
+                    <li>
+                        <span data-target="projects">Web Design Projects</span>
+                    </li>
+                    <li><span data-target="resume">Resume</span></li>
+
+                    <li><span data-target="contact">Contact</span></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="home" class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <div class="hero-photo-wrap">
+                    <div class="hero-photo" id="likeable-photo">
+                        <img src="/images/sonya-zhang.jpg" alt="Sonya Zhang" />
+                    </div>
+                    <div class="like-counter">
+                        <span class="like-heart">&#10084;</span>
+                        <span id="like-count">0</span>
+                    </div>
+                </div>
+                <div class="hero-card">
+                    <h1 class="hero-title">Welcome to my website!</h1>
+                    <p>
+                        I am a sophomore at Eastside Preparatory School and a
+                        dancer at Pacific Northwest Ballet School and Hengda
+                        Dance Academy
+                    </p>
+                    <p>Scroll through my website to learn more about me!</p>
+                </div>
+            </div>
+            <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+                <svg
+                    width="50"
+                    height="50"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                >
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+                <svg
+                    width="50"
+                    height="50"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                >
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+            </a>
+        </section>
 
         <section id="about">
             <h1>About Me</h1>
-            <p></p>
+            <div class="about-row">
+                <div class="about-img">
+                    <img
+                        src="/images/eps.png"
+                        alt="Eastside Preparatory School"
+                    />
+                </div>
+                <div class="about-text">
+                    <h2>Eastside Preparatory School</h2>
+                    <p>
+                        I am currently a sophomore at EPS, and I joined in 9th
+                        grade.
+                    </p>
+                </div>
+            </div>
+            <div class="about-row">
+                <div class="about-img">
+                    <img src="/images/pnb.jpg" alt="Pacific Northwest Ballet" />
+                </div>
+                <div class="about-text">
+                    <h2>Pacific Northwest Ballet</h2>
+                    <p>
+                        I dance with the Pacific Northwest Ballet school in
+                        Level 7.
+                    </p>
+                </div>
+            </div>
+            <div class="about-row">
+                <div class="about-img">
+                    <img src="/images/hengda.jpg" alt="Hengda Dance Academy" />
+                </div>
+                <div class="about-text">
+                    <h2>Hengda Dance Academy</h2>
+                    <p>
+                        I also compete at ballet competitions and learn Chinese
+                        Dance at Hengda
+                    </p>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <svg
+                    width="50"
+                    height="50"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                >
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+                <svg
+                    width="50"
+                    height="50"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                >
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+            </div>
         </section>
 
         <section id="projects">
             <h1>Web Design Projects</h1>
-            <h2>Here are some of my previous web design projects</h2>
-            <div class="codehacker">
-                <p>Code Hacker</p>
-                <p>https://ma2-codehackerfinal.onrender.com</p>
+            <p class="projects-subtitle">
+                Here are some of my previous web design projects
+            </p>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h2>All About Amy</h2>
+                    <p>
+                        <a
+                            href="https://sonya8001.github.io/lets.hope.i.remember.how.to.code/"
+                            target="_blank"
+                            >Visit Site</a
+                        >
+                    </p>
+                    <br />
+                    <p>
+                        This is a project that I made about my super
+                        questionable friend named Amy. Do not visit if you don't
+                        hope to be jumpscared by her face.
+                    </p>
+                </div>
+                <div class="project-card featured">
+                    <h2>Code Hacker</h2>
+                    <p>
+                        <a
+                            href="https://ma2-codehackerfinal.onrender.com"
+                            target="_blank"
+                            >Visit Site</a
+                        >
+                    </p>
+                    <br />
+                    <p>
+                        This is a code guessing game that was definitely a
+                        challenge to make. I'm pretty proud of how it turned out
+                        though and you should totally try it out for a brain
+                        teaser!
+                    </p>
+                </div>
+                <div class="project-card">
+                    <h2>Portfolio Website</h2>
+                    <p>
+                        <a href="https://fryingfish.netlify.app" target="_blank"
+                            >Visit Site</a
+                        >
+                    </p>
+                    <br />
+                    <p>
+                        This was my final for my frist Web Design class, and our
+                        task was to make a website for a business. I made one
+                        for Frying Fish, which is a local chinese restaurant
+                        that my family often visits.
+                    </p>
+                </div>
             </div>
-            <div class="amy">
-                <p>All about Amy</p>
-                <p>
-                    https://sonya8001.github.io/lets.hope.i.remember.how.to.code/>
-                </p>
+            <div class="scroll-indicator">
+                <svg
+                    width="50"
+                    height="50"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                >
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+                <svg
+                    width="50"
+                    height="50"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                >
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
             </div>
         </section>
 
         <section id="resume">
-            <h2>Resume</h2>
-            <p></p>
-        </section>
-
-        <section id="skills">
-            <h2>Skills</h2>
-            <p></p>
-        </section>
-
-        <section id="extracurricular">
-            <h2>Extracurricular</h2>
-            <p></p>
-        </section>
-
-        <section id="gallery">
-            <h2>Gallery</h2>
-            <p></p>
+            <h1>Resume</h1>
+            <div class="resume-grid">
+                <div class="resume-card">
+                    <div class="resume-app-header">
+                        <img
+                            src="/images/30day-logo.png"
+                            alt="30 Day Me"
+                            class="resume-app-icon"
+                        />
+                        <div>
+                            <h2>30 Day Me</h2>
+                            <p>
+                                Habit-building app to track 30 Day Challenges<br /><a
+                                    href="https://apps.apple.com/us/app/30-day-me/id6755921080"
+                                    target="_blank"
+                                    >Download now!</a
+                                >
+                            </p>
+                        </div>
+                    </div>
+                    <p style="text-align: center">Marketing + Outreach Lead</p>
+                    <h3>App Accomplishments</h3>
+                    <ul>
+                        <li>~300 Users</li>
+                        <li>
+                            Won $5000 Grand Prize at Mobile Hub AI Agent
+                            Showcase
+                        </li>
+                        <li>
+                            $400 Funding Winner in IdeAction Global Pitch
+                            Competition
+                        </li>
+                        <li>
+                            Partnerships with Coding Mind Academy, Hengda Dance
+                            Academy, Taiji Acupuncture Wellness Center, and Wang
+                            Ning Marial Arts Academy
+                        </li>
+                    </ul>
+                </div>
+                <div class="resume-card">
+                    <h2>Ballet</h2>
+                    <h3>Competitions</h3>
+                    <ul>
+                        <li><u>YAGP semi-finals:</u> Top 12</li>
+                        <li>
+                            <u>ADCIBC semi-finals:</u> 1st place contemporary,
+                            2nd place classical
+                        </li>
+                        <li>
+                            <u>WBAC semi-finals:</u> 1st place classical, 2nd
+                            place classical
+                        </li>
+                        <li>
+                            <u
+                                >International Dance Competition of Greater
+                                China Youth:</u
+                            >
+                            1st Chinese Dance solo, 1st ballet solo
+                        </li>
+                    </ul>
+                    <h3>Performances with PNB</h3>
+                    <ul>
+                        <li><u>Beauty and the Beast:</u> Major child role</li>
+                        <li><u>Midsummer Night's Dream:</u> Lead child role</li>
+                        <li>
+                            Sleeping Beauty, Coppelia, Swan Lake major child
+                            roles
+                        </li>
+                    </ul>
+                    <h3>Attended Summer Programs</h3>
+                    <ul>
+                        <li>School of American Ballet 2023</li>
+                        <li>American Ballet Theater 2024-2025</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="resume-grid">
+                <div class="resume-card resume-full">
+                    <h2>Other</h2>
+                    <ul>
+                        <li>John Locke Global Essay Competition Shortlisted</li>
+                        <li>
+                            Wharton Global Youth Essentials of Entreprenuership
+                            Summer Program
+                        </li>
+                        <li>
+                            English Teaching for Chinese transfer teachers at
+                            Hengda Dance Academy
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <svg
+                    width="50"
+                    height="50"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                >
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+                <svg
+                    width="50"
+                    height="50"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                >
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+            </div>
         </section>
 
         <section id="contact">
-            <h2>Contact</h2>
-            <p></p>
+            <h1>Contact</h1>
+            <p>Click to message:</p>
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <a href="https://mail.google.com/mail/?view=cm&to=sonyayzhang@gmail.com" target="_blank">
+                        <img src="/images/gmail.png" alt="Gmail" />
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <a href="https://outlook.office.com/mail/deeplink/compose?to=szhang@eastsideprep.org" target="_blank">
+                        <img src="/images/outlook.png" alt="Outlook" />
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <a href="https://www.instagram.com/sonya.zhang08/?hl=en" target="_blank">
+                        <img src="/images/instagram.png" alt="Instagram" />
+                    </a>
+                </div>
+            </div>
         </section>
+
+        <script src="script.js"></script>
     </body>
 </html>
