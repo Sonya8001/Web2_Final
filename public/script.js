@@ -1,4 +1,3 @@
-// Make navbar sticky after scrolling past the header name
 const header = document.querySelector('.site-header');
 const nav = document.getElementById('navbar');
 const nameEl = document.querySelector('.name');
@@ -14,7 +13,6 @@ function handleScroll() {
 
 window.addEventListener('scroll', handleScroll);
 
-// Like feature with cookie persistence
 function getCookie(name) {
     const match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
     return match ? match[2] : null;
@@ -49,7 +47,6 @@ photo.addEventListener('click', function(e) {
     heart.addEventListener('animationend', () => heart.remove());
 });
 
-// Scroll indicators -> scroll to next section
 document.querySelectorAll('.scroll-indicator').forEach(indicator => {
     indicator.style.cursor = 'pointer';
     indicator.addEventListener('click', function() {
@@ -63,7 +60,6 @@ document.querySelectorAll('.scroll-indicator').forEach(indicator => {
     });
 });
 
-// Smooth scroll for nav buttons
 document.querySelectorAll('.nav span[data-target]').forEach(btn => {
     btn.addEventListener('click', function() {
         const target = document.getElementById(this.dataset.target);
